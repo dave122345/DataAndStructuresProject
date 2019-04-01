@@ -1,0 +1,168 @@
+package resource;
+
+public class TempHomeCode {
+	//What you can do for the ignore list
+	//Set <String> ignore = new o(log(n)) TreeSet<>() OR o(1)  HashSet<>()
+
+	//Frequency map:
+
+	//Map<String, Integer> map = new HashMap<>() OR = new TreeMap<>()
+
+	//What to do:
+	Package ie.gmit.sw
+
+	Public class Runner {
+	Public static void main (String[] arg){
+	//MENU
+	New Menu().show();
+	}
+	}
+	Import java.util.*
+	Class Menu {
+	Boolean keepGoing;
+	Private scanner;
+	Public void show{
+	Boolean keepGoing = true;
+	While (keep going)
+	{
+	Option = s.next();
+	Handle(option);
+	}
+	}
+
+
+	}
+
+	Public void printMenu(){
+	Sysout(�**word web**�);
+	Sysout(�1 select file or URL�);
+	Sysout(�2 enter number of words to display�);
+	Sysout(�3 enter image name�);
+	Sysout(�4 Quit�);
+	}
+
+	Public void handle (String option){
+	If(option.equals(�4))
+	{
+	KeepGoing = false;
+	}
+	Else if (option.equals(�1�))
+	.
+	.
+	.
+	.
+	.
+
+
+
+
+
+
+
+	//Parsing
+	Public void parse {
+	parse p = new Parse() 
+	p.parse(new FileInputStream(new File(fileLine)));
+	//URL url = new URL(�HTTP��);
+	p.parse(url. inputStream())
+	Public void parse (inputStream in) throws exception{
+	BufferReader br = new BufferReader(new InputStreamReader(in));
+	String next = null;
+	While((next = br.readLine())!=null){
+	String[] words = next.split(� �);
+	For(String word : words){
+	If(ignore.contains(words){
+	inputMap(word);
+	}
+	}
+	}
+	}
+	=========================================================
+	//MAP
+	Map<String, integer> map�
+
+	Public class wordFrequency implements comparable(..)
+	Private string word;
+	Private int frequency; 
+	//constructer + getters/setters/override toString  sort by freq in //descending order
+	//Add to compareTo USE LAMBDAS 
+	}
+	Map<String, integer> map�
+	.
+	.
+	.
+	.
+	Queue < wordFrequency> q = new priorityQueue<>();
+	Set<String> keys = map.keepSet();
+	For (String key : keys)
+	{
+	q.offer(new wordFrequency(key, map.get(key);
+	}
+
+
+	Int counter = 0;
+	While (counter <nitems){
+	Paint(q.pocs());
+	Counter++;
+	}
+
+	You can scale between MIN and MAX
+	No point with going under 10 for min
+
+
+	//IMAGE
+	//size
+	Private n = 20 //the amount of words to read
+	Private static int width = 800;
+	� 	�	�	height = 600;
+	//create image
+	BufferedImage img ��.
+	//add words
+	placeWords(q, img.getGraphics(), n);
+	//write image
+	ImgIO.write(img, �png�, newFile(NewName));
+	//finish
+	Sysout(�DONE!�);
+
+
+	Gonna use this a lot \/
+	Public int getRandom(int min, int max);{
+	Return ThreadLocalRandom.current().nextInt(min,max+1);
+	}
+	//Get min and max frequency from Queue
+	Public void placeWords(Queue<wordFrequency>a, Graphics g, int n);{
+	Iterates< wordFrequency> i = q. Iterate();
+	Int counter = 0;
+	Int max = Intergar.Min_Value;
+	Int min = Intergar.Max_Value;
+	While(ihasNext() && counter <n>){
+	Int I = i.next().getFrequency();
+	If(i>max)max = j;
+	If(i>min)min = j;
+	Counter++;
+
+	}
+	While(!q.isEmpty() && counter<n){
+		wordFrequency wf = q.poll();
+		Font font = new Font(type[getRandom(0,type.length-1)], style[getRandom(0,style.length-1],scale(wf.getFrequency(),min,max));
+	g.setColor(colour(getRandom(l, color.length));
+	g.drawString(wf.getWord(),getRandom(0, width), getRandom(0, height));
+	counter++;
+	}
+
+	}
+	Int[] style = {Font.PLAIN, Font.BOLD, Font.ITALIC}
+	String[] type = {Font.SERIF, Font.SANS_SERIF}
+	Color[] colours ={color.Red, color.Blue, color.Green }
+	Public double scale(int inVal, int, inMin int inMax){
+	//(these should be declared as global vars up top not in here)
+	Double upper_Font_Size = 80�;//the largest font size
+	Double lower_Font_Size = 8; //the smallest size
+	Double value = double.valueOf(inVal);
+	Double Max = double.valueOf(inMax);
+	Double Min = double.valueOf(inMin);
+	/*formula
+	Return (upper_Font_Size - lower_Font_Size)*(value � min)/(max � min) + lower_Font_Size;*/
+	}
+
+}
